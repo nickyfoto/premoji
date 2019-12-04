@@ -3,7 +3,6 @@ README.md
 setup.cfg
 setup.py
 src/premoji/.DS_Store
-src/premoji/.gitignore
 src/premoji/Mapping.csv
 src/premoji/__init__.py
 src/premoji/emojis_model_19111601.joblib
