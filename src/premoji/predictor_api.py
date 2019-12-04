@@ -8,6 +8,7 @@ about whether Flask is working. A short check is run at the bottom of the file.
 """
 
 # import pickle
+import os
 import numpy as np
 # from sklearn.externals import joblib
 import joblib
@@ -25,8 +26,9 @@ import pandas as pd
 # model = joblib.load('./static/models/emojis_model.joblib')
 # model = joblib.load('./models/emojis_model_19111601.joblib')
 # mapping_file = './models/Mapping.csv'
-model = joblib.load('emojis_model_19111601.joblib')
-mapping_file = 'Mapping.csv'
+dir_path = os.path.dirname(os.path.realpath(__file__))
+model = joblib.load(dir_path + '/models/emojis_model_19111601.joblib')
+mapping_file = dir_path + '/models/Mapping.csv'
 emojis = pd.read_csv(mapping_file, usecols = ['emoticons']) 
 
 def make_prediction(input_chat):
