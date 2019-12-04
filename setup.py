@@ -12,7 +12,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name = 'premoji',
-    version = '0.1.3',
+    version = '0.1.4',
     description = 'predict emoji on given text',
     long_description = README,
     long_description_content_type = "text/markdown",
