@@ -12,7 +12,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name = 'premoji',
-    version = '0.1.1',
+    version = '0.1.2',
     description = 'predict emoji on given text',
     long_description = README,
     long_description_content_type = "text/markdown",
@@ -20,7 +20,7 @@ setup(
     author = 'Qiang Huang',
     author_email = 'nickyfoto@gmail.com',
     url = 'https://macworks.io',
-    download_url = 'https://github.com/nickyfoto/premoji/archive/v0.1.1-alpha.tar.gz',
+    download_url = 'https://github.com/nickyfoto/premoji/archive/v0.1.2-alpha.tar.gz',
     packages = find_packages(where='src'),
     package_dir = {'': 'src'},
     include_package_data=True,
